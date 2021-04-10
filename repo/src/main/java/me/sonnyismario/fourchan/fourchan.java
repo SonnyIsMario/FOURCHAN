@@ -1,5 +1,6 @@
 package me.sonnyismario.fourchan;
 
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import org.lwjgl.opengl.Display;
@@ -15,14 +16,11 @@ public class fourchan {
     @Mod.Instance
     public static fourchan INSTANCE;
 
-    public fourchan()
-    {
-        INSTANCE = this;
-    }
-
     @Mod.EventHandler
     public void init(FMLInitializationEvent event)
     {
+        MinecraftForge.EVENT_BUS.register(INSTANCE);
+
         Display.setTitle(MODNAME + " " + MODVER);
     }
 
