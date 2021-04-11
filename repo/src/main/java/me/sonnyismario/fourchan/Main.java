@@ -8,7 +8,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import org.lwjgl.opengl.Display;
 
 @Mod(modid = "fourchan", version = "b1")
-public class fourchan {
+public class Main {
 
     public static final String MODNAME = "Fourchan";
     public static final String MODID = "fourchan";
