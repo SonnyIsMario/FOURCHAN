@@ -13,7 +13,7 @@ public class Main {
     public static final String MODNAME = "Fourchan";
     public static final String MODID = "fourchan";
     public static final String MODVER = "b1";
-    public static final String CHAT_PREFIX = "*";
+    public static final String CHATPREFIX = "*";
 
     public static ModuleManager moduleManager;
 
