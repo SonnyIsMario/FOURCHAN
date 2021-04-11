@@ -1,6 +1,7 @@
 package me.sonnyismario.fourchan.module;
 
 import me.sonnyismario.fourchan.Main;
+import me.sonnyismario.fourchan.module.gui.Watermark;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,6 +12,8 @@ public class ModuleManager {
     public ModuleManager()
     {
         (modules = new ArrayList<Module>()).clear();
+
+        this.modules.add(new Watermark());
     }
 
     public Module getModule(String name)

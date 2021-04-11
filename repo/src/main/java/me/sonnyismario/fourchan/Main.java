@@ -18,7 +18,7 @@ public class Main {
     public static ModuleManager moduleManager;
 
     @Mod.Instance
-    public static fourchan INSTANCE;
+    public static Main INSTANCE;
 
     @Mod.EventHandler
     public void init(FMLPreInitializationEvent event)
